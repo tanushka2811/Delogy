@@ -1,8 +1,8 @@
-# 🚀 PixelPulse Digital
+# 🚀Delogy 
 
 A premium, fully responsive digital marketing agency website built for modern marketing agencies, creative studios, startups, and branding companies. Developed with Next.js, TypeScript, Tailwind CSS, and Framer Motion, the website showcases marketing services, success stories, pricing plans, expert team members, client testimonials, and a modern responsive UI.
 
-🔗 **Live Demo:** https://pixelpulse-digital.vercel.app
+🔗 **Live Demo:**
 
 ---
 
@@ -44,13 +44,6 @@ This project was built to strengthen my frontend development skills by focusing 
 - ROI highlights
 - Marketing campaign showcases
 
-### 💰 Pricing Plans
-
-- Starter Plan
-- Growth Plan
-- Enterprise Plan
-- Feature comparison
-- CTA buttons
 
 ### ⭐ Why Choose Us
 
@@ -112,58 +105,6 @@ This project was built to strengthen my frontend development skills by focusing 
 
 - Vercel
 
----
-
-# 📸 Screenshots
-
-### 🏠 Home & About
-
-| Home | About |
-|------|-------|
-| ![](screenshots/01-home.png) | ![](screenshots/02-about.png) |
-
----
-
-### 💼 Services & Success Stories
-
-| Services | Success Stories |
-|----------|-----------------|
-| ![](screenshots/03-services.png) | ![](screenshots/04-success-stories.png) |
-
----
-
-### 💰 Pricing & Why Choose Us
-
-| Pricing | Why Choose Us |
-|---------|---------------|
-| ![](screenshots/05-pricing.png) | ![](screenshots/06-why-us.png) |
-
----
-
-### 👨‍💼 Our Team & FAQ
-
-| Our Team | FAQ |
-|----------|-----|
-| ![](screenshots/07-our-team.png) | ![](screenshots/08-faqs.png) |
-
----
-
-### 📞 Contact
-
-| Contact |
-|---------|
-| ![](screenshots/09-contact.png) |
-
----
-
-### 📱 Mobile Preview
-
-<p align="center">
-  <img src="screenshots/10-mobile-preview.png" alt="Mobile Preview" width="300">
-</p>
-
----
-
 # 📂 Project Structure
 
 ```text
@@ -200,7 +141,7 @@ git clone https://github.com/Pulipati-Rahul/pixelpulse-digital.git
 ## Navigate into the project
 
 ```bash
-cd pixelpulse-digital
+cd delogy
 ```
 
 ## Install dependencies
@@ -227,7 +168,6 @@ http://localhost:3000
 
 # 🌍 Live Deployment
 
-https://pixelpulse-digital.vercel.app
 
 ---
 
@@ -265,18 +205,16 @@ While building this project, I learned:
 
 # 👨‍💻 Author
 
-**Pulipati Rahul**
+**Tanushka goswami**
 
 Full Stack Developer
 
 GitHub:  
-https://github.com/Pulipati-Rahul
+https://github.com/tanushka2811
 
 LinkedIn:  
-https://www.linkedin.com/in/pulipatirahul
+https://www.linkedin.com/in/tanushka-goswami-487285282/
 
-Portfolio:  
-https://pulipatirahul.vercel.app
 
 ---
 
