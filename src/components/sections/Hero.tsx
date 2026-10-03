@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, BarChart3, TrendingUp, Sparkles, Target, Zap } from "lucide-react";
+import { ArrowRight, BarChart3, TrendingUp, Sparkles, Target, Zap, Megaphone, MousePointerClick, Search } from "lucide-react";
 import Button from "../ui/Button";
 
 export default function Hero() {
@@ -43,20 +43,21 @@ export default function Hero() {
           {/* Sparkle Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/10 text-primary font-semibold text-xs tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5" />
-            Empowering Next-Gen Brands
+            Your Digital Growth Partner
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-bg-dark leading-[1.1] sm:leading-[1.05]">
-            Grow Your Brand with{" "}
-            <span className="text-gradient font-black">
-              Data-Driven
-            </span>{" "}
-            Digital Marketing
+            Build Your Brand.{" "}
+            <span className="text-gradient font-black md:text-5xl sm:text-5xl text-4xl">
+             Grow Your Business.
+            </span>
+           
           </h1>
 
           <p className="text-muted text-lg sm:text-xl leading-relaxed max-w-xl">
-            We merge design sophistication, deep analytics, and high-performance acquisition channels to scale startups and enterprise brands.
+          Delogy helps ambitious businesses build a stronger digital presence through powerful branding, high-performing websites, SEO, and result-focused advertising.
           </p>
+          {/* Supporting Text */} <div className="flex flex-wrap gap-x-6  text-sm font-medium text-bg-dark"> <span className="flex items-center gap-2"> <Search className="w-4 h-4 text-primary" /> SEO Optimization </span> <span className="flex items-center gap-2"> <MousePointerClick className="w-4 h-4 text-accent" /> Google PPC </span> <span className="flex items-center gap-2"> <Megaphone className="w-4 h-4 text-secondary" /> Meta Ads </span> </div>
 
           {/* Action CTAs */}
           <div className="flex flex-wrap gap-4 pt-4">
@@ -67,27 +68,27 @@ export default function Hero() {
               onClick={() => handleScrollTo("#contact")}
               className="group"
             >
-              Get Free Strategy Call
+              Start Your Project
             </Button>
             <Button
               variant="glass"
               size="lg"
               onClick={() => handleScrollTo("#projects")}
             >
-              View Portfolio
+              Explore Services
             </Button>
           </div>
 
           {/* Quick trust metrics */}
           <div className="pt-8 border-t border-gray-100 flex items-center gap-8 text-sm text-muted">
             <div>
-              <span className="block text-2xl font-bold text-bg-dark">99%</span>
-              Client Retention Rate
+              <span className="block text-2xl font-bold text-bg-dark">360°</span>
+              Digital Growth Solutions
             </div>
             <div className="w-[1px] h-10 bg-gray-200" />
             <div>
-              <span className="block text-2xl font-bold text-bg-dark">4.9/5</span>
-              Average Rating
+              <span className="block text-2xl font-bold text-bg-dark">5+</span>
+               Core Digital Services
             </div>
           </div>
         </motion.div>
@@ -113,17 +114,17 @@ export default function Hero() {
                 <span className="w-3 h-3 rounded-full bg-green-400" />
               </div>
               <div className="text-[10px] text-muted font-mono tracking-widest uppercase">
-                PixelPulse Analytics
+                DELOGY / GROWTH
               </div>
             </div>
 
             {/* Header metrics */}
             <div className="mb-6">
-              <span className="text-xs text-muted font-medium">Monthly Active Revenue</span>
+              <span className="text-xs text-muted font-medium"> Digital Growth Services</span>
               <div className="flex items-baseline gap-2 mt-1">
-                <span className="text-3xl font-black text-bg-dark tracking-tight">$84,230</span>
+                <span className="text-2xl font-black text-bg-dark tracking-tight">5 services</span>
                 <span className="text-xs font-semibold text-emerald-500 bg-emerald-50 px-2 py-0.5 rounded-full flex items-center gap-1">
-                  <TrendingUp className="w-3 h-3" /> +24.8%
+                  <TrendingUp className="w-3 h-3" /> Growth Focused
                 </span>
               </div>
             </div>
@@ -158,10 +159,10 @@ export default function Hero() {
             
             {/* Chart footer labels */}
             <div className="flex justify-between items-center text-[10px] text-muted font-mono mt-4">
-              <span>Wk 1</span>
-              <span>Wk 2</span>
-              <span>Wk 3</span>
-              <span>Wk 4</span>
+              <span>Brand</span>
+              <span>Website</span>
+              <span>Growth</span>
+              <span>Reach</span>
             </div>
           </motion.div>
 
@@ -173,13 +174,13 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-xs font-semibold text-bg-dark mb-3">
               <BarChart3 className="w-4 h-4 text-accent" />
-              Traffic Sources
+             Our Growth Channels
             </div>
             <div className="space-y-2">
               <div className="space-y-1">
                 <div className="flex justify-between text-[10px] font-medium text-muted">
                   <span>Google Ads</span>
-                  <span>42%</span>
+                  <span>60%</span>
                 </div>
                 <div className="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
                   <div className="bg-primary h-full w-[42%]" />
@@ -214,11 +215,11 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2 text-xs font-semibold text-bg-dark mb-2">
               <Target className="w-4 h-4 text-secondary" />
-              Conversion rate
+               Growth Strategy
             </div>
-            <div className="text-2xl font-black text-bg-dark tracking-tight">12.4%</div>
+            <div className="text-xl font-black text-bg-dark tracking-tight"> Data + Creativity</div>
             <span className="text-[10px] text-muted flex items-center gap-1 mt-1 font-medium">
-              <Zap className="w-3 h-3 text-amber-500 fill-amber-500" /> vs. 8.2% baseline
+              <Zap className="w-3 h-3 text-amber-500 fill-amber-500" /> Built for digital growth
             </span>
           </motion.div>
 

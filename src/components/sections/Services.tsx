@@ -8,10 +8,7 @@ import {
   Megaphone,
   Share2,
   Compass,
-  FileText,
-  MailOpen,
   Laptop,
-  BarChart2,
   ArrowUpRight,
 } from "lucide-react";
 
@@ -19,21 +16,21 @@ const SERVICES = [
   {
     id: "seo",
     title: "Search Engine Optimization",
-    description: "Rank #1 for high-intent search queries. We optimize technical infrastructure, content clusters, and high-authority links to scale organic revenue.",
+    description: "Improve your search visibility and connect with the right audience. We optimize your website, content, and search strategy to build a stronger organic presence and support long-term growth.",
     icon: Search,
     color: "text-accent bg-accent/5 hover:bg-accent/15",
   },
   {
     id: "google-ads",
     title: "Google Pay-Per-Click Ads",
-    description: "Capture customers at the exact moment they search. We construct hyper-targeted search, shopping, and performance-max campaigns that convert.",
+    description: "Reach people actively searching for your products or services. We create focused Google Ads campaigns with the right targeting, messaging, and optimization to help turn clicks into meaningful business opportunities.",
     icon: TrendingUp,
     color: "text-primary bg-primary/5 hover:bg-primary/15",
   },
   {
     id: "meta-ads",
     title: "Meta Social Ads",
-    description: "Interrupt the scroll with stunning visuals. We engineer custom creative pipelines and algorithmic scaling strategies across Facebook and Instagram.",
+    description: "Put your brand in front of the right audience across Facebook and Instagram. We combine audience targeting, creative campaigns, and continuous optimization to build awareness and generate valuable leads.",
     icon: Megaphone,
     color: "text-secondary bg-secondary/5 hover:bg-secondary/15",
   },
@@ -47,38 +44,19 @@ const SERVICES = [
   {
     id: "brand",
     title: "Brand Identity & Strategy",
-    description: "Carve out your unique market position. We shape modern logos, typographic rules, product messaging matrices, and cohesive visual styles.",
+    description:  "Build a brand that people can recognize, remember, and trust. We develop clear brand positioning, visual direction, messaging, and strategy that give your business a consistent digital identity.",
     icon: Compass,
     color: "text-primary bg-primary/5 hover:bg-primary/15",
   },
-  {
-    id: "content",
-    title: "Content Marketing",
-    description: "Establish industry thought leadership. We write long-form data-driven reports, blog clusters, and creative copy designed to educate and capture leads.",
-    icon: FileText,
-    color: "text-secondary bg-secondary/5 hover:bg-secondary/15",
-  },
-  {
-    id: "email",
-    title: "Email & SMS Marketing",
-    description: "Automate user lifetime value. We write customized checkout-recovery flows, welcome sequences, and weekly digests using advanced segmentation.",
-    icon: MailOpen,
-    color: "text-accent bg-accent/5 hover:bg-accent/15",
-  },
+  
   {
     id: "web",
     title: "High-Converting Web Design",
-    description: "Speed, design, and code combined. We craft premium landing pages and Webflow/Next.js portals optimized for maximum load speed and conversions.",
+    description: "Create a website that represents your brand and supports your business goals. We design and develop modern, responsive, and user-focused websites that deliver a smooth experience across every device.",
     icon: Laptop,
     color: "text-primary bg-primary/5 hover:bg-primary/15",
   },
-  {
-    id: "analytics",
-    title: "Advanced Data Analytics",
-    description: "No guesswork, just absolute metrics. We integrate Server-Side Tracking, GA4 dashboards, and custom marketing attribution models for crystal-clear ROI.",
-    icon: BarChart2,
-    color: "text-secondary bg-secondary/5 hover:bg-secondary/15",
-  },
+  
 ];
 
 const containerVariants = {
@@ -127,7 +105,7 @@ export default function Services() {
             Tailored Marketing Services Designed to Scale
           </h2>
           <p className="text-muted text-base leading-relaxed">
-            We don't offer generic templates. We construct targeted omnichannel growth formulas designed specifically for your target audience and budget.
+            We don&apos;t offer generic templates. We construct targeted omnichannel growth formulas designed specifically for your target audience and budget.
           </p>
         </div>
 

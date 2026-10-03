@@ -2,41 +2,41 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Globe, Users, Trophy, Award } from "lucide-react";
+import {  Trophy, Award, Target, Palette, Globe } from "lucide-react";
 import AnimatedCounter from "../ui/AnimatedCounter";
 
 const STATS = [
   {
     id: "years",
-    target: 8,
+    target: 2,
     suffix: "+",
     label: "Years of Growth",
     icon: Trophy,
     color: "text-primary bg-primary/5",
   },
   {
-    id: "clients",
-    target: 250,
-    suffix: "+",
-    label: "Brands Scaled",
-    icon: Users,
+    id: "services",
+    target: 5,
+    suffix: "",
+    label: "Core Digital Services",
+    icon: Target,
+    color: "text-primary bg-primary/5",
+  },
+   {
+    id: "marketing",
+    target: 360,
+    suffix: "°",
+    label: "Growth Approach",
+    icon: Globe,
     color: "text-accent bg-accent/5",
   },
-  {
-    id: "projects",
-    target: 400,
-    suffix: "+",
-    label: "Successful Projects",
-    icon: Award,
+   {
+    id: "creative",
+    target: 100,
+    suffix: "%",
+    label: "Creative Thinking",
+    icon: Palette,
     color: "text-secondary bg-secondary/5",
-  },
-  {
-    id: "countries",
-    target: 18,
-    suffix: "+",
-    label: "Global Markets",
-    icon: Globe,
-    color: "text-amber-500 bg-amber-500/5",
   },
 ];
 
@@ -61,22 +61,27 @@ export default function About() {
               Who We Are
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
-              Scaling Digital Presence With Creative Intelligence
+             Building Digital Experiences That Drive Real Growth
             </h2>
+            
           </div>
 
           <div className="space-y-6">
             <div className="border-l-4 border-primary pl-4 py-2">
               <h3 className="font-bold text-lg text-bg-dark mb-2">Our Mission</h3>
               <p className="text-muted text-sm leading-relaxed">
-                To engineer impactful digital marketing solutions that yield predictable revenue, cultivate deep customer connections, and launch brands to the forefront of their industries.
+               To help businesses grow through meaningful digital experiences,
+                strategic marketing, and technology that turns ideas into
+                measurable results.
               </p>
             </div>
 
             <div className="border-l-4 border-accent pl-4 py-2">
               <h3 className="font-bold text-lg text-bg-dark mb-2">Our Vision</h3>
               <p className="text-muted text-sm leading-relaxed">
-                To build a world where creative visionaries and analytical thinkers collaborate to push the boundaries of brand growth, crafting experiences that define the digital economy.
+                To become a trusted digital growth partner for ambitious
+                businesses worldwide, helping brands build, adapt, and thrive
+                in an ever-changing digital landscape.
               </p>
             </div>
           </div>
