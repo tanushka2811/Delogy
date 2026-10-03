@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PixelPulse Digital | Data-Driven Digital Marketing Agency",
-  description: "PixelPulse Digital is a premium digital marketing agency scaling startups and global brands through search engine optimization (SEO), Google Ads, Meta Ads, brand strategy, and high-converting web design.",
+  title: "Delogy | Data-Driven Digital Marketing Agency",
+  description: "Delogy is a premium digital marketing agency scaling startups and global brands through search engine optimization (SEO), Google Ads, Meta Ads, brand strategy, and high-converting web design.",
   keywords: [
     "digital marketing agency",
     "SEO agency",
@@ -26,21 +26,15 @@ export const metadata: Metadata = {
     "web design agency",
     "analytics and reporting",
   ],
-  authors: [{ name: "PixelPulse Digital Team" }],
-  creator: "PixelPulse Digital",
+  authors: [{ name: "Delogy Team" }],
+  creator: "Delogy",
   openGraph: {
-    title: "PixelPulse Digital | Data-Driven Digital Marketing Agency",
+    title: "Delogy | Data-Driven Digital Marketing Agency",
     description: "Scale your client acquisition volume and revenue with data-backed search, social, and brand identity strategies.",
-    url: "https://pixelpulse.digital",
-    siteName: "PixelPulse Digital",
+    url: "https://delogy.com",
+    siteName: "Delogy",
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "PixelPulse Digital | Data-Driven Digital Marketing Agency",
-    description: "Scale your client acquisition volume and revenue with data-backed search, social, and brand identity strategies.",
-    creator: "@pixelpulse_digital",
   },
   robots: {
     index: true,
