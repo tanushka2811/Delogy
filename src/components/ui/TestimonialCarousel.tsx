@@ -95,7 +95,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
             </div>
 
             {/* Testimonial Quote */}
-            <blockquote className="text-xl md:text-2xl font-medium text-bg-dark leading-relaxed mb-8 max-w-3xl">
+            <blockquote className="text-xl md:text-xl font-medium text-bg-dark leading-relaxed mb-8 max-w-3xl">
               "{current.quote}"
             </blockquote>
 

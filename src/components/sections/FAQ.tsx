@@ -41,14 +41,14 @@ const FAQ_ITEMS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 bg-white relative overflow-hidden">
+    <section id="faq" className="py-14 bg-white relative overflow-hidden">
       {/* Decorative Blob */}
       <div className="absolute top-1/3 right-0 w-72 h-72 rounded-full bg-primary/5 blur-[80px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Got Questions?
           </span>

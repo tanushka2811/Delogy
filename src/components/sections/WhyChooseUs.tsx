@@ -5,50 +5,56 @@ import { motion } from "framer-motion";
 import { Users, BarChart3, Eye, Zap, Cpu, UserCheck } from "lucide-react";
 
 const WHY_ITEMS = [
-  {
-    id: "team",
-    title: "Experienced Team",
-    description: "Our strategists, designers, and developers have led campaigns for high-growth tech companies and global retail brands.",
+    {
+    id: "strategy",
+    title: "Strategy-First Approach",
+    description:
+      "We start by understanding your business, audience, and goals before creating a digital strategy that fits your brand and growth objectives.",
     icon: Users,
     glow: "group-hover:border-primary/40",
     iconBg: "text-primary bg-primary/10",
   },
   {
-    id: "data",
-    title: "Data-Driven Decisions",
-    description: "We don't guess what creative works. We look at conversion metrics, heatmaps, and user recordings to build strategies that convert.",
+    id: "results",
+    title: "Growth-Focused Solutions",
+    description:
+      "From SEO and paid advertising to websites and branding, we focus on building digital solutions that support meaningful and sustainable business growth.",
     icon: BarChart3,
     glow: "group-hover:border-accent/40",
     iconBg: "text-accent bg-accent/10",
   },
   {
-    id: "reporting",
-    title: "Transparent Reporting",
-    description: "Log into your custom web dashboard anytime. Track CTR, CPM, ROI, and spend attribution in real time, no marketing jargon.",
+    id: "transparency",
+    title: "Clear & Transparent",
+    description:
+      "We believe in straightforward communication and clear strategies, keeping you informed about the work being done and the direction of your digital growth.",
     icon: Eye,
     glow: "group-hover:border-secondary/40",
     iconBg: "text-secondary bg-secondary/10",
   },
   {
-    id: "support",
-    title: "Fast Support",
-    description: "Communication is our strength. Access your dedicated Slack channel for general answers in under 2 hours, day or night.",
+    id: "collaboration",
+    title: "Collaborative Partnership",
+    description:
+      "Your business knows its audience best. We work closely with you to understand your vision and turn your ideas into effective digital experiences.",
     icon: Zap,
     glow: "group-hover:border-amber-500/40",
     iconBg: "text-amber-400 bg-amber-400/10",
   },
   {
-    id: "tools",
-    title: "Modern Tools",
-    description: "We use the latest data tracking setups, generative design software, A/B testing infrastructure, and tracking automation APIs.",
+    id: "technology",
+    title: "Modern Technology",
+    description:
+      "We combine modern design practices, development technologies, analytics, and digital marketing tools to create experiences built for today's online world.",
     icon: Cpu,
     glow: "group-hover:border-emerald-500/40",
     iconBg: "text-emerald-400 bg-emerald-400/10",
   },
   {
-    id: "managers",
-    title: "Dedicated Managers",
-    description: "Get one point of contact who understands your business strategy intimately. No passing you off to junior account executives.",
+    id: "support",
+    title: "Dedicated Support",
+    description:
+      "We stay connected throughout the process, making it easier to discuss ideas, understand progress, and continuously improve your digital presence.",
     icon: UserCheck,
     glow: "group-hover:border-rose-500/40",
     iconBg: "text-rose-400 bg-rose-400/10",
@@ -57,7 +63,7 @@ const WHY_ITEMS = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-24 bg-bg-dark text-white relative overflow-hidden grid-dots-dark">
+    <section id="why-choose-us" className="py-14 bg-bg-dark text-white relative overflow-hidden grid-dots-dark">
       {/* Decorative Blob */}
       <div className="absolute top-1/2 left-0 w-80 h-80 rounded-full bg-primary/10 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-accent/5 blur-[100px] pointer-events-none" />
@@ -65,7 +71,7 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Why Partner With Us
           </span>

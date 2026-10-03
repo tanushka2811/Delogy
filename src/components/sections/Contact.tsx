@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Send, Check } from "lucide-react";
+import {Send, Check } from "lucide-react";
 import Button from "../ui/Button";
 
 export default function Contact() {
@@ -37,14 +37,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-bg-light relative overflow-hidden grid-dots">
+    <section id="contact" className="py-14 bg-bg-light relative overflow-hidden grid-dots">
       {/* Decorative Blob */}
       <div className="absolute bottom-1/4 left-0 w-80 h-80 rounded-full bg-accent/5 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Get In Touch
           </span>
@@ -56,16 +56,16 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* Form and Map Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        {/* Form */}
+        <div className="flex justify-center">
           
-          {/* Column 1: Consultation Form */}
+          {/*  Consultation Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-7 bg-white rounded-3xl border border-gray-100 p-8 shadow-sm flex flex-col justify-between"
+            className="w-full max-w-3xl bg-white rounded-3xl border border-gray-100 p-8 shadow-sm"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -165,60 +165,7 @@ export default function Contact() {
             </form>
           </motion.div>
 
-          {/* Column 2: Maps and Office Details
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
-            transition={{ duration: 0.6 }}
-            className="lg:col-span-5 flex flex-col justify-between gap-8"
-          >
-            <div className="bg-white rounded-3xl border border-gray-100 p-8 shadow-sm space-y-6">
-              <h3 className="font-bold text-lg text-bg-dark border-l-2 border-primary pl-3">
-                PixelPulse HQ
-              </h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-4 text-sm">
-                  <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold block text-bg-dark">Address</span>
-                    <span className="text-muted text-xs">285 Fulton St, New York, NY 10007</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 text-sm">
-                  <Mail className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold block text-bg-dark">General Queries</span>
-                    <a href="mailto:hello@pixelpulse.digital" className="text-muted text-xs hover:text-primary transition-colors">
-                      hello@pixelpulse.digital
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 text-sm">
-                  <Phone className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold block text-bg-dark">Phone Contact</span>
-                    <a href="tel:+12125550198" className="text-muted text-xs hover:text-primary transition-colors">
-                      +1 (212) 555-0198
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 text-sm">
-                  <Clock className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-bold block text-bg-dark">Business Hours</span>
-                    <span className="text-muted text-xs">Monday - Friday: 9:00 AM - 6:00 PM EST</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-           
-          </motion.div> */}
+         
 
         </div>
 

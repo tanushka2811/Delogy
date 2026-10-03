@@ -42,7 +42,7 @@ const STATS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-14 bg-white relative overflow-hidden">
       
       <div className="absolute top-1/2 left-0 w-72 h-72 rounded-full bg-accent/5 blur-[80px] pointer-events-none" />
 

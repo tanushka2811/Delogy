@@ -90,14 +90,14 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-bg-light relative overflow-hidden grid-dots">
+    <section id="services" className="py-14 bg-bg-light relative overflow-hidden grid-dots">
       {/* Decorative Blob */}
       <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-primary/5 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Our Expertise
           </span>
