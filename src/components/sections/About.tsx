@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {  Trophy, Award, Target, Palette, Globe } from "lucide-react";
+import {  Trophy, Target, Palette, Globe } from "lucide-react";
 import AnimatedCounter from "../ui/AnimatedCounter";
 
 const STATS = [
@@ -95,7 +95,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="lg:col-span-6 grid grid-cols-2 gap-6"
         >
-          {STATS.map((stat, idx) => {
+          {STATS.map((stat) => {
             const Icon = stat.icon;
             return (
               <div
