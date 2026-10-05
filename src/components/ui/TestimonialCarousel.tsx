@@ -66,7 +66,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
   const current = testimonials[index];
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto px-4 md:px-12 py-12">
+    <div className="relative w-full max-w-4xl mx-auto px-4 md:px-12 ">
       {/* Background quote mark decoration */}
       <Quote className="absolute top-0 left-0 w-24 h-24 text-primary/5 -translate-x-4 -translate-y-4 pointer-events-none select-none" />
 
@@ -95,13 +95,13 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
             </div>
 
             {/* Testimonial Quote */}
-            <blockquote className="text-xl md:text-xl font-medium text-bg-dark leading-relaxed mb-8 max-w-3xl">
+            <blockquote className="text-sm md:text-xl font-medium text-bg-dark leading-relaxed mb-8 max-w-3xl">
               "{current.quote}"
             </blockquote>
 
             {/* Client Bio */}
             <div>
-              <cite className="not-italic block font-bold text-lg text-bg-dark">
+              <cite className="not-italic block font-bold text-sm text-bg-dark">
                 {current.author}
               </cite>
               <span className="text-muted text-sm block mt-1">
@@ -109,10 +109,10 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
               </span>
             </div>
 
-            {/* Styled Logo Indicator */}
+            {/* Styled Logo Indicator
             <div className="mt-8 text-sm tracking-widest font-black text-gray-300 uppercase select-none">
               {current.logo}
-            </div>
+            </div> */}
           </motion.div>
         </AnimatePresence>
       </div>
@@ -121,14 +121,14 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
       <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between pointer-events-none px-2">
         <button
           onClick={prevSlide}
-          className="w-10 h-10 rounded-full border border-gray-100 bg-white shadow-sm flex items-center justify-center text-muted hover:text-primary hover:border-primary/20 pointer-events-auto transition-all cursor-pointer focus:outline-none"
+          className="sm:w-10 sm:h-10 w-7 h-7 rounded-full border border-gray-100 bg-white shadow-sm flex items-center justify-center text-muted hover:text-primary hover:border-primary/20 pointer-events-auto transition-all cursor-pointer focus:outline-none"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="w-10 h-10 rounded-full border border-gray-100 bg-white shadow-sm flex items-center justify-center text-muted hover:text-primary hover:border-primary/20 pointer-events-auto transition-all cursor-pointer focus:outline-none"
+          className="sm:w-10 sm:h-10 w-7 h-7 rounded-full border border-gray-100 bg-white shadow-sm flex items-center justify-center text-muted hover:text-primary hover:border-primary/20 pointer-events-auto transition-all cursor-pointer focus:outline-none"
           aria-label="Next slide"
         >
           <ChevronRight className="w-5 h-5" />

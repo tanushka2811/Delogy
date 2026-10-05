@@ -32,7 +32,7 @@ export default function Accordion({ items }: AccordionProps) {
           >
             <button
               onClick={() => handleToggle(item.id)}
-              className="w-full flex items-center justify-between p-6 text-left font-semibold text-lg text-bg-dark hover:text-primary transition-colors focus:outline-none"
+              className="w-full flex items-center justify-between sm:p-6 p-3 text-left font-semibold sm:text-lg text-sm text-bg-dark hover:text-primary transition-colors focus:outline-none"
               aria-expanded={isOpen}
               aria-controls={`faq-content-${item.id}`}
               id={`faq-btn-${item.id}`}
@@ -57,7 +57,7 @@ export default function Accordion({ items }: AccordionProps) {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <div className="px-6 pb-6 text-muted text-base leading-relaxed border-t border-gray-50 pt-2">
+                  <div className="px-6 pb-6 text-muted text-base leading-relaxed border-t border-gray-50 pt-2 text-sm">
                     {item.answer}
                   </div>
                 </motion.div>

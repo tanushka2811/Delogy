@@ -49,7 +49,7 @@ export default function Testimonials() {
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Client Success
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
             Trusted by Innovators and Market Leaders
           </h2>
           <p className="text-muted text-base leading-relaxed">

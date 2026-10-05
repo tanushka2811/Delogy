@@ -42,11 +42,11 @@ const STATS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-14 bg-white relative overflow-hidden">
+    <section id="about" className="py-10 bg-white relative overflow-hidden">
       
       <div className="absolute top-1/2 left-0 w-72 h-72 rounded-full bg-accent/5 blur-[80px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
         
         {/* Left Column: Mission & Vision */}
         <motion.div
@@ -56,11 +56,11 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="lg:col-span-6 space-y-10"
         >
-          <div className="space-y-4">
+          <div className="space-y-1">
             <span className="text-xs font-bold uppercase tracking-widest text-primary">
               Who We Are
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
              Building Digital Experiences That Drive Real Growth
             </h2>
             
@@ -100,15 +100,15 @@ export default function About() {
             return (
               <div
                 key={stat.id}
-                className="p-6 rounded-2xl border border-gray-100 bg-white hover:border-primary/10 hover:shadow-lg transition-all duration-300 group"
+                className="sm:p-6 p-4 rounded-2xl border border-gray-200 bg-white hover:border-primary/10 hover:shadow-lg transition-all duration-300 group"
               >
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 ${stat.color}`}>
-                  <Icon className="w-6 h-6" />
+                <div className={`sm:w-12 sm:h-12 w-10 h-10 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 ${stat.color}`}>
+                  <Icon className="sm:w-6 sm:h-6 w-4 h-4" />
                 </div>
-                <div className="text-3xl sm:text-4xl font-black text-bg-dark tracking-tight">
+                <div className="text-xl sm:text-4xl font-black text-bg-dark tracking-tight">
                   <AnimatedCounter target={stat.target} suffix={stat.suffix} />
                 </div>
-                <p className="text-muted text-xs font-semibold mt-2 tracking-wide uppercase">
+                <p className="text-muted sm:text-xs text-xs font-semibold mt-2 tracking-wide uppercase">
                   {stat.label}
                 </p>
               </div>

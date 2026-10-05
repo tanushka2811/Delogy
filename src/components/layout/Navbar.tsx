@@ -11,7 +11,6 @@ const NAV_LINKS = [
   { name: "Services", href: "#services" },
    {name:"Case Studies", href:"#projects"},
   { name: "Why Delogy", href: "#why-choose-us" },
-  {name:"Team", href:"#team"},
   { name: "Testimonials", href: "#testimonials" },
 
  { name: "FAQ", href: "#faq" },
@@ -69,7 +68,7 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "glass shadow-md py-4 border-b border-gray-100"
+            ? "bg-white shadow-md py-4 border-b border-gray-100"
             : "bg-transparent py-6 border-b border-transparent"
         }`}
       >
@@ -158,7 +157,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
-                  className="text-bg-dark hover:text-primary font-semibold text-2xl transition-colors py-2 block w-full"
+                  className="text-bg-dark hover:text-primary font-semibold text-md transition-colors py-2 block w-full"
                 >
                   {link.name}
                 </motion.a>

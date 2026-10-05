@@ -48,14 +48,14 @@ export default function FAQ() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 space-y-4">
+        <div className="text-center max-w-2xl mx-auto mb-8 space-y-4">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             Got Questions?
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
+          <h2 className="text-xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-muted text-base leading-relaxed">
+          <p className="text-muted text-base leading-relaxed text-sm">
             Everything you need to know about our growth frameworks, client onboarding, support channels, and performance guarantees.
           </p>
         </div>

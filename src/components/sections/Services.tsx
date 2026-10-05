@@ -123,23 +123,23 @@ export default function Services() {
               <motion.div
                 key={service.id}
                 variants={itemVariants}
-                className="p-8 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                className="sm:p-8 p-5 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 ${service.color}`}>
-                    <Icon className="w-5 h-5" />
+                  <div className={`sm:w-12 sm:h-12 w-10 h-10 rounded-2xl flex items-center justify-center sm:mb-6 mb-3 transition-all duration-300 ${service.color}`}>
+                    <Icon className="sm:w-5 sm:h-5 w-4 h-4" />
                   </div>
-                  <h3 className="text-lg font-bold text-bg-dark mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="sm:text-lg text-sm font-bold text-bg-dark mb-3 group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-muted text-sm leading-relaxed mb-6">
+                  <p className="text-muted sm:text-sm text-xs leading-relaxed mb-6">
                     {service.description}
                   </p>
                 </div>
 
                 <button
                   onClick={() => handleScrollToContact(service.title)}
-                  className="inline-flex items-center text-xs font-bold tracking-wide uppercase text-primary hover:text-secondary transition-colors duration-200 mt-2 cursor-pointer group/btn"
+                  className="inline-flex items-center text-xs font-bold tracking-wide uppercase text-primary hover:text-secondary transition-colors duration-200 cursor-pointer group/btn"
                 >
                   Discuss Strategy
                   <ArrowUpRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />

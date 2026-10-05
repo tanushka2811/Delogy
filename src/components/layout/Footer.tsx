@@ -151,7 +151,8 @@ export default function Footer() {
         </div>
 
         {/* Column 2: Services */}
-        <div>
+        {/* <div className="flex flex-col gap-6 max-md:flex-row"> */}
+        <div >
           <h3 className="font-bold text-lg mb-6 border-l-2 border-primary pl-3">
             Services
           </h3>
@@ -172,7 +173,7 @@ export default function Footer() {
         </div>
 
         {/* Column 3: Explore */}
-        <div>
+        <div >
           <h3 className="font-bold text-lg mb-6 border-l-2 border-accent pl-3">
             Explore
           </h3>
@@ -191,6 +192,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
+        {/* </div> */}
 
         {/* Column 4: Newsletter */}
         <div className="space-y-6">

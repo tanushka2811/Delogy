@@ -46,27 +46,33 @@ export default function Hero() {
             Your Digital Growth Partner
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-bg-dark leading-[1.1] sm:leading-[1.05]">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-bg-dark leading-[1.1] sm:leading-[1.05]">
             Build Your Brand.{" "}
-            <span className="text-gradient font-black md:text-5xl sm:text-5xl text-4xl">
+            <span className="text-gradient font-black md:text-5xl sm:text-5xl text-3xl">
              Grow Your Business.
             </span>
            
           </h1>
 
-          <p className="text-muted text-lg sm:text-xl leading-relaxed max-w-xl">
+          <p className="text-muted text-sm sm:text-xl leading-relaxed max-w-xl">
           Delogy helps ambitious businesses build a stronger digital presence through powerful branding, high-performing websites, SEO, and result-focused advertising.
           </p>
-          {/* Supporting Text */} <div className="flex flex-wrap gap-x-6  text-sm font-medium text-bg-dark"> <span className="flex items-center gap-2"> <Search className="w-4 h-4 text-primary" /> SEO Optimization </span> <span className="flex items-center gap-2"> <MousePointerClick className="w-4 h-4 text-accent" /> Google PPC </span> <span className="flex items-center gap-2"> <Megaphone className="w-4 h-4 text-secondary" /> Meta Ads </span> </div>
+          {/* Supporting Text */} 
+          <div className="flex flex-wrap gap-x-6  text-sm font-medium text-bg-dark"> 
+            <span className="flex items-center gap-2"> 
+              <Search className="w-4 h-4 text-primary" /> SEO Optimization </span>
+               <span className="flex items-center gap-2"> <MousePointerClick className="w-4 h-4 text-accent" /> Google PPC </span>
+                <span className="flex items-center gap-2"> <Megaphone className="w-4 h-4 text-secondary" /> Meta Ads </span> 
+            </div>
 
           {/* Action CTAs */}
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-2">
             <Button
               variant="primary"
               size="lg"
               icon={ArrowRight}
               onClick={() => handleScrollTo("#contact")}
-              className="group"
+              className="max-sm:px-3 max-sm:py-3 max-sm:text-sm"
             >
               Start Your Project
             </Button>
@@ -74,13 +80,14 @@ export default function Hero() {
               variant="glass"
               size="lg"
               onClick={() => handleScrollTo("#projects")}
+                className="max-sm:px-4 max-sm:py-2 max-sm:text-sm"
             >
               Explore Services
             </Button>
           </div>
 
           {/* Quick trust metrics */}
-          <div className="pt-8 border-t border-gray-100 flex items-center gap-8 text-sm text-muted">
+          <div className="pt-2 border-t border-gray-100 flex items-center gap-8 text-sm text-muted">
             <div>
               <span className="block text-2xl font-bold text-bg-dark">360°</span>
               Digital Growth Solutions
