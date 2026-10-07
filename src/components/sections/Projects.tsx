@@ -4,46 +4,50 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Button from "../ui/Button";
+import Image from "next/image";
 
 const PROJECTS = [
   {
-    id: "fintech",
-    title: "Aura FinTech",
-    category: "Financial Technology",
-    description: "Built and scaled Aura's organic presence, combined with surgical search campaigns to capture high-value customer acquisitions.",
+    id: "reader",
+    title: "PageTurner Reader",
+    category: "Web Reader & Publishing",
+    description:
+      "An immersive digital reading platform featuring customizable typography, dark mode synchronization, and offline reading capabilities.",
+    link: "https://readerhere.netlify.app/",
     results: [
-      { label: "Traffic Growth", value: "+142%" },
-      { label: "Conversion Rate", value: "+38%" },
-      { label: "Acquisition ROI", value: "4.2x" },
+      { label: "Active Readers", value: "45K+" },
+      { label: "Daily Sessions", value: "+115%" },
+      { label: "Avg Read Time", value: "42m" },
     ],
-    gradient: "from-primary to-accent",
-    chartDots: [30, 45, 40, 60, 55, 78, 90],
+    image: "/project-1.png",
   },
   {
-    id: "ecommerce",
-    title: "Velo Fashion Group",
-    category: "E-Commerce & Retail",
-    description: "Re-engineered Velo's Meta Ads funnel and landing page architecture to unlock maximum direct-to-consumer purchase conversions.",
+    id: "task-management",
+    title: "TaskFlow Pro",
+    category: "Productivity & Collaboration",
+    description:
+      "A Kanban and list-based team productivity dashboard designed for fast-moving engineering and design teams with real-time syncing.",
+    link: "https://task-management-frontend-uc76.onrender.com/",
     results: [
-      { label: "Traffic Growth", value: "+310%" },
-      { label: "Conversion Rate", value: "+76%" },
-      { label: "Sales Revenue ROI", value: "5.8x" },
+      { label: "Team Velocity", value: "+84%" },
+      { label: "Task Completion", value: "94%" },
+      { label: "Active Teams", value: "1.2K" },
     ],
-    gradient: "from-accent to-secondary",
-    chartDots: [20, 35, 50, 45, 68, 80, 95],
+    image: "/project-2.png",
   },
   {
-    id: "saas",
-    title: "Solas Health Tech",
-    category: "B2B SaaS / MedTech",
-    description: "Created a comprehensive SEO cluster strategy coupled with localized LinkedIn ads to capture enterprise accounts.",
+    id: "property-listing",
+    title: "EstateHub Marketplace",
+    category: "Real Estate & PropTech",
+    description:
+      "An interactive property listing and discovery marketplace featuring advanced location filters, virtual tours, and agent scheduling.",
+    link: "https://estate-hub-sooty.vercel.app/",
     results: [
-      { label: "Traffic Growth", value: "+88%" },
-      { label: "Lead Conversions", value: "+45%" },
-      { label: "Contract Value ROI", value: "3.5x" },
+      { label: "Property Views", value: "+210%" },
+      { label: "Lead Conversions", value: "4.8x" },
+      { label: "Agent Inquiries", value: "+65%" },
     ],
-    gradient: "from-secondary to-primary",
-    chartDots: [40, 42, 55, 48, 62, 70, 85],
+    image: "/project-3.png",
   },
 ];
 
@@ -59,20 +63,19 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 bg-white relative overflow-hidden">
+    <section id="projects" className="py-10 bg-white relative overflow-hidden">
       {/* Decorative Blur */}
-      <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-secondary/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
         {/* Section Title */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div className="space-y-4 max-w-xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary">
-              Success Stories
+            <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">
+              Featured Work
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-bg-dark tracking-tight">
-              Featured Client Campaigns and Real Performance Results
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-gray-900 tracking-tight">
+              Explore Our Live Production Applications & Platforms
             </h2>
           </div>
           <Button
@@ -81,7 +84,7 @@ export default function Projects() {
             onClick={handleScrollToContact}
             className="group"
           >
-            Start Your Case Study
+            Start Your Project
           </Button>
         </div>
 
@@ -94,55 +97,63 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group rounded-3xl border border-gray-100 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              className="group rounded-xl p-3 border border-gray-100 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full"
             >
-              {/* Graphic Header Block */}
-              <div className={`h-48 bg-gradient-to-tr ${project.gradient} p-6 relative overflow-hidden flex items-end shrink-0`}>
-                {/* SVG Mock chart background */}
-                <div className="absolute inset-0 opacity-20 pointer-events-none">
-                  <svg className="w-full h-full" viewBox="0 0 200 100" preserveAspectRatio="none">
-                    <path
-                      d={`M 0 100 ${project.chartDots.map((val, i) => `L ${(200 / 6) * i} ${100 - val}`).join(" ")} L 200 100 Z`}
-                      fill="rgba(255,255,255,0.4)"
-                    />
-                    <path
-                      d={`M 0 ${100 - project.chartDots[0]} ${project.chartDots.map((val, i) => `S ${(200 / 6) * i} ${100 - val}`).join(" ")}`}
-                      fill="none"
-                      stroke="#ffffff"
-                      strokeWidth="2.5"
-                    />
-                  </svg>
-                </div>
-                
-                {/* Glowing Overlay */}
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
-                
-                {/* Categories Badge */}
-                <div className="relative z-10 glass-dark text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1.5 rounded-full">
+              {/* Image Header Block */}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative h-48 w-full overflow-hidden block cursor-pointer"
+                aria-label={`View live demo of ${project.title}`}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  width={500}
+                  height={300}
+                />
+                <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1.5 rounded-full">
                   {project.category}
                 </div>
-              </div>
+              </a>
 
               {/* Text Description */}
-              <div className="p-8 flex flex-col justify-between flex-grow">
-                <div className="space-y-4">
+              <div className="p-4 flex flex-col justify-between flex-grow">
+                <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-xl font-bold text-bg-dark group-hover:text-primary transition-colors duration-300">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300 flex items-center gap-2"
+                    >
                       {project.title}
-                    </h3>
-                    <ArrowUpRight className="w-5 h-5 text-muted group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+                    </a>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-gray-50 group-hover:bg-indigo-50 transition-colors duration-300"
+                      aria-label={`External link to ${project.title}`}
+                    >
+                      <ArrowUpRight className="w-5 h-5 text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300" />
+                    </a>
                   </div>
-                  <p className="text-muted text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Performance Metrics Block */}
-                <div className="grid grid-cols-3 gap-2 pt-6 mt-6 border-t border-gray-100 text-center">
+                <div className="grid grid-cols-3 gap-2 pt-6 mt-3 border-t border-gray-100 text-center">
                   {project.results.map((res) => (
                     <div key={res.label} className="space-y-1">
-                      <div className="text-lg font-black text-bg-dark tracking-tight">{res.value}</div>
-                      <div className="text-[10px] font-bold text-muted uppercase tracking-wider leading-none">
+                      <div className="sm:text-lg text-sm font-black text-gray-900 tracking-tight">
+                        {res.value}
+                      </div>
+                      <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider leading-none">
                         {res.label}
                       </div>
                     </div>
@@ -152,7 +163,6 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
